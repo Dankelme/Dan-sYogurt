@@ -1,172 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+.bg-body-tertiary {
+  
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<div class="container">
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-<div class="container-fluid">
-
-<a class="navbar-brand" href="index.html">
-<img src="/images/logo-dans-meat-yogurt.svg" alt="Dan's Meat Yogurt Company Logo">
-</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse flex-column align-items-end" id="navbarSupportedContent">
-
-<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
-<li class="nav-item btn btn-outline-light" style="width:110px;">
-<a class="nav-link text-white" href="#">Contact</a>
-</li>
-
-<li class="nav-item dropdown btn btn-outline-light" style="width:110px;">
-<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
-Flavours
-</a>
-
-<ul class="dropdown-menu">
-<li><a class="dropdown-item" href="#">Ham</a></li>
-<li><a class="dropdown-item" href="#">Beef</a></li>
-<li><a class="dropdown-item" href="#">Chicken</a></li>
-<li><a class="dropdown-item" href="#">Fish</a></li>
-</ul>
-
-</li>
-
-</ul>
-
-</div>
-</div>
-</nav>
+    background-color: rgba(243, 246, 249, 0) !important;
+}
 
 
-<!-- JUMBOTRON -->
-<div class="jumbotron">
-<div class="row">
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-image: linear-gradient( to bottom right, #00f490, #00bbc9);
+}
 
-<div class="col-12 col-md-7">
-<h1 class="display-2 text-white drop-shadow">Thick & Creamy</h1>
-<p class="lead">With Real Meat Chunks</p>
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
 
-<a class="btn btn-outline-light btn-lg mt-4 px-5 py-3 mb-5 mb-md-0" href="#">Pricing</a>
-</div>
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0);
+}
 
-<div class="col-12 col-md-5">
-<img src="images/hero1.png" alt="Dan's meat yogurts" class="img-fluid">
-</div>
+.drop-shadow {
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.458);
+}
 
-</div>
-</div>
+.lead {
+    color: white;
+    font-size: 2.2 rem;
+}
 
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
 
-<!-- FOUNDER -->
-<div class="row">
+.nav-item {
+    margin-right: 15px;
+}
 
-<div class="col-12 col-md-4">
-<img src="/images/headshot-dan.jpg" class="img-fluid rounded-4 border border-white border-lg" alt="Daniel Walter Scott">
-</div>
+.row {
+    margin-left: 40px;
+}
 
-<div class="col-12 col-md-8 border border-white rounded-4">
-<h2>Message From Our Founder</h2>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque voluptatibus aut rerum voluptatum, est eligendi reprehenderit vero recusandae placeat quaerat minima officia dolores assumenda eum tenetur aliquid dolore magni quasi voluptatem et, alias ipsa facere? Reprehenderit, illo sapiente at quibusdam dolorum eveniet adipisci laboriosam ab! Sed, rem tempore quos soluta eius dignissimos possimus suscipit harum id aut ducimus necessitatibus aliquam?</p>
-</div>
+h2 {
+    color: white;
+}
 
-</div>
+p {
+    color: white;
+}
 
-
-<!-- CAROUSEL -->
-<div id="carouselExample" class="carousel slide d-none d-md-block carousel-fade" data-bs-ride="carousel">
-
-<div class="carousel-inner">
-
-<div class="carousel-item active" data-bs-interval="1000"> 
-<img src="images/yogurt-1.png" class="d-block w-100" alt="">
-</div>
-
-<div class="carousel-item" data-bs-interval="1000">
-<img src="images/yogurt-2.png" class="d-block w-100" alt="">
-</div>
-
-<div class="carousel-item" data-bs-interval="100">
-<img src="images/yogurt-3.png" class="d-block w-100" alt="">
-</div>
-
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-
-</div>
-
-
-<!-- CARDS -->
-<div class="row mt-5 mb-5">
-
-<div class="col-md-4">
-<div class="card shadow">
-<img src="images/product1.png" class="card-img-top" alt="">
-<div class="card-body">
-<h5 class="card-title">Card title</h5>
-<p class="card-text">Some quick example text.</p>
-<a href="http://www.bringyourownlaptop.com" class="btn btn-primary stretched-link">Go somewhere</a>
-</div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card shadow">
-<img src="images/product2.png" class="card-img-top" alt="">
-<div class="card-body">
-<h5 class="card-title">Card title</h5>
-<p class="card-text">Some quick example text.</p>
-<a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-</div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card shadow">
-<img src="/images/product3.png" class="card-img-top" alt="">
-<div class="card-body">
-<h5 class="card-title">Card title</h5>
-<p class="card-text">Some quick example text.</p>
-<a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
+.btn-primary .btn-primary:hover {
+    background-color:white;
+    border-color: #00f490;
+}
